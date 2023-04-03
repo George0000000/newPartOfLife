@@ -59,7 +59,7 @@
 
         }
         &-navigation {
-
+            height: 100vh;
             &:before {
                 content: 'Меню';
                 margin-left: 55px;
@@ -84,6 +84,9 @@
                 border-radius: 24px;
                 &.active {
                     left: 0;
+                    body {
+                        overflow: hidden;
+                    }
                 }
             }
         }
@@ -91,7 +94,7 @@
         &-functions {
             margin-left: 55px;
             position: absolute;
-            bottom: 80px;
+            bottom: 200px;
         }
         &-item {
             display: block;

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
 body {
   font-size: 16px;
   background-color: #f2f2f2;
@@ -33,7 +33,7 @@ body {
   position: sticky;
   background-color: #fff;
   width: 100%;
-  top: 0px;
+  top: 0;
   left: 0;
   z-index: 50;
   border-radius: 24px; }
@@ -168,6 +168,7 @@ main {
       -ms-transform: scale(0);
       transform: scale(0); }
   .header-navigation {
+    height: 100vh;
     font-size: 56px; }
     .header-navigation:before {
       content: 'Меню';
@@ -197,10 +198,12 @@ main {
       border-radius: 24px; }
       .header-navigation:not(.header-functions).active {
         left: 0; }
+        .header-navigation:not(.header-functions).active body {
+          overflow: hidden; }
   .header-functions {
     margin-left: 55px;
     position: absolute;
-    bottom: 80px; }
+    bottom: 200px; }
   .header-item {
     display: block;
     margin-bottom: 24px;
