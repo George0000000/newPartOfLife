@@ -59,6 +59,9 @@
 
         }
         &-navigation {
+            &.active {
+
+            }
             padding-top: 120px;
             &:before {
                 content: 'Меню';
@@ -107,6 +110,7 @@
                 margin-left: 55px;
             }
             margin-left: 55px;
+            color: black;
         }
     }
     .wrapper {

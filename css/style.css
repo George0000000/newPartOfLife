@@ -6,8 +6,12 @@ body {
   padding: 0 24px;
   font-family: 'Inter', sans-serif; }
 
+.fixScroll {
+  overflow: hidden; }
+
 .wrapper {
-  min-height: 100%;
+  overflow: auto;
+  height: 95vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,7 +60,7 @@ body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    height: 60px; }
+    height: 80px; }
   .header-left {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -102,6 +106,8 @@ body {
     position: relative;
     z-index: 3; }
   .header-login {
+    position: relative;
+    z-index: 3;
     margin-left: 16px;
     font-size: 18px;
     display: -webkit-box;
@@ -215,7 +221,8 @@ main {
   .header-functions {
     margin-left: 55px; }
   .header-item {
-    margin-left: 55px; }
+    margin-left: 55px;
+    color: black; }
     .header-item:not(:last-child) {
       margin-bottom: 24px; }
     .header-item:not(:first-child) {

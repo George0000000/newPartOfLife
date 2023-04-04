@@ -25,7 +25,7 @@
         align-items: center;
         justify-content: space-between;
 
-        height: 60px;
+        height: 80px;
     }
 
     &-left {
@@ -66,7 +66,7 @@
             margin-left: 24px;
         }
     }
-    
+
     &-functions {
         margin-left: 94px;
         position: relative;
@@ -80,6 +80,8 @@
         z-index: 3;
     }
     &-login {
+        position: relative;
+        z-index: 3;
         margin-left: 16px;
         font-size: 18px;
 
