@@ -83,8 +83,10 @@ body {
   .header-nav {
     position: relative;
     z-index: 3; }
-  .header-item:not(:first-child) {
-    margin-left: 24px; }
+  .header-item {
+    color: #808080; }
+    .header-item:not(:first-child) {
+      margin-left: 24px; }
   .header-functions {
     margin-left: 94px;
     position: relative;
@@ -96,6 +98,7 @@ body {
     -ms-flex-align: center;
     align-items: center; }
   .header-lang {
+    color: #808080;
     position: relative;
     z-index: 3; }
   .header-login {
@@ -110,9 +113,11 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 12px 24px;
+    height: 48px;
+    width: 220px;
     background: #4754EB;
-    border-radius: 16px; }
+    border-radius: 16px;
+    color: #fff; }
 
 main {
   -webkit-box-flex: 1;
@@ -168,7 +173,7 @@ main {
       -ms-transform: scale(0);
       transform: scale(0); }
   .header-navigation {
-    height: 100vh;
+    padding-top: 120px;
     font-size: 56px; }
     .header-navigation:before {
       content: 'Меню';
@@ -185,7 +190,6 @@ main {
       -ms-flex-direction: column;
       flex-direction: column;
       position: fixed;
-      padding-top: 120px;
       top: 0;
       left: -200%;
       width: 100%;
@@ -200,16 +204,24 @@ main {
         left: 0; }
         .header-navigation:not(.header-functions).active body {
           overflow: hidden; }
+  .header-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
   .header-functions {
-    margin-left: 55px;
-    position: absolute;
-    bottom: 200px; }
-  .header-item {
-    display: block;
-    margin-bottom: 24px;
     margin-left: 55px; }
+  .header-item {
+    margin-left: 55px; }
+    .header-item:not(:last-child) {
+      margin-bottom: 24px; }
     .header-item:not(:first-child) {
-      margin-left: 55px; } }
+      margin-left: 55px; }
+  .wrapper {
+    min-height: 130%; } }
 
 @media (max-width: 768px) {
   .header-navigation:before {
@@ -228,8 +240,6 @@ main {
 @media only screen and (max-width: 768px) {
   .container {
     padding: 0 20px; }
-  .header-navigation {
-    padding: 100px 0 0 0; }
   .header-login {
     font-size: 0;
     background-image: url("../img/person.svg");

@@ -61,12 +61,12 @@
         z-index: 3;
     }
     &-item {
-
+        color: #808080;
         &:not(:first-child) {
             margin-left: 24px;
         }
     }
-
+    
     &-functions {
         margin-left: 94px;
         position: relative;
@@ -75,6 +75,7 @@
         align-items: center;
     }
     &-lang {
+        color: #808080;
         position: relative;
         z-index: 3;
     }
@@ -86,8 +87,11 @@
         justify-content: center;
         align-items: center;
 
-        padding: 12px 24px;
+        height: 48px;
+        width: 220px;
         background: #4754EB;
         border-radius: 16px;
+
+        color: #fff;
     }
 }

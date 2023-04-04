@@ -59,7 +59,7 @@
 
         }
         &-navigation {
-            height: 100vh;
+            padding-top: 120px;
             &:before {
                 content: 'Меню';
                 margin-left: 55px;
@@ -72,8 +72,8 @@
             &:not(.header-functions) {
                 align-items: start;
                 flex-direction: column;
+
                 position: fixed;
-                padding-top: 120px;
                 top: 0;
                 left: -200%;
                 width: 100%;
@@ -91,19 +91,26 @@
             }
         }
 
+        &-nav {
+            display: flex;
+            flex-direction: column;
+        }
+
         &-functions {
             margin-left: 55px;
-            position: absolute;
-            bottom: 200px;
         }
         &-item {
-            display: block;
-            margin-bottom: 24px;
+            &:not(:last-child) {
+                margin-bottom: 24px;
+            }
             &:not(:first-child) {
                 margin-left: 55px;
             }
             margin-left: 55px;
         }
+    }
+    .wrapper {
+        min-height: 130%;
     }
 }
 @media (max-width: 768px) {

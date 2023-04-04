@@ -3,5 +3,4 @@ $(document).ready(function () {
         $('.header-burger, .header-navigation').toggleClass('active');
 
     })
-
 })
